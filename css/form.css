@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Montserrat";
+    background-image: linear-gradient(to right, rgb(255, 164, 164),rgb(255, 255, 255));
+  }
+  section {
+    height: 100vh;
+    width: 100%;
+    /* background-color: aliceblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    /* background-color: white; */
+    
+    background-image: linear-gradient(to right, rgb(255, 255, 255),rgb(255, 164, 164));
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  .form-group {
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+  }
+  
+  textarea {
+    resize: vertical;
+    background-image: linear-gradient(to right, rgb(255, 164, 164),rgb(255, 255, 255));
+ 
+  }
+  button[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: "Dancing Script";
+    font-weight: bold;
+    color: rgb(84, 192, 255);
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    background-image: linear-gradient(to right, rgb(250, 111, 111),rgb(255, 193, 193));
+ 
+    transition: 0.3s ease background-color;
+  }
+  button[type="submit"]:hover {
+    background-color: rgb(214, 226, 236);
+  }
+  #status {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  #status.success {
+    background-color: rgb(211, 250, 153);
+    animation: status 4s ease forwards;
+  }
+  #status.error {
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+  }
+  @keyframes status {
+    0% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    90% {
+      opacity: 1;
+      pointer-events: all;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      color: #fff;
+      text-shadow: 0 0 10px #ff61ca, 0 0 20px #ff61ca, 0 0 30px #ff61ca, 0 0 40px #ff61ca, 0 0 50px #ff61ca, 0 0 60px #ff61ca, 0 0 70px #ff61ca, 0 0 90px #ff61ca;
+    }
+    to {
+      color: gray;
+      text-shadow: 0 0 20px #ff61ca, 0 0 30px #ff61ca, 0 0 40px #ff61ca, 0 0 50px #ff61ca, 0 0 60px #ff61ca, 0 0 70px #ff61ca, 0 0 80px #ff61ca, 0 1 90px #ff61ca;
+  }
+}
+.massage{
+  font-family: 'Dancing Script';
+  text-shadow: 2px 2px 4px #000000;
+}
+.myText{
+  margin-top: 4vw;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: larger;
+  font-family: arial;
+  color: white;
+  text-align: center;
+}
+.neons{
+  font-family: 'dancing script';
+  margin-top: 8vw ;
+  /* background-image: url('../images/rose.png') ; */
+  padding: 2vw;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+  display: inline-block;
+  z-index: 10;
+}
+
+/* heart shape  */
+
+.heart-shape{
+  position: relative;
+  z-index: -5;
+  top: -11vw;
+  left: 32vw;
+  width: 200px;
+  height: 200px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-image: url('../images/rose.png') ;
+  background-size: cover;
+}
+.heart-shape:before,
+.heart-shape:after{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-image: url('../images/rose.png') ;
+  background-size: cover;
+}
+.heart-shape:before{
+  bottom: 0px;
+  left: -100px;
+}
+.heart-shape:after{
+  top: -100px;
+  right: 0px;
+  z-index: -1;
+}

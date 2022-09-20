@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(to right, rgb(255, 255, 255),rgb(255, 164, 164));
+}
+.anchor{
+    /* color: none !important; */
+    text-decoration: none !important;
+    text-align: center !important;
+}
+/* font-family: 'Dancing Script', cursive; */
+.neons {
+    font-size: 3vw;
+    font-weight: bold;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  /* @import url("https://fonts.googleapis.com/css?family=Codystar:300&display=swap"); */
+  @-webkit-keyframes glow {
+    from {
+      color: #fff;
+      text-shadow: 0 0 10px #ff61ca, 0 0 20px #ff61ca, 0 0 30px #ff61ca, 0 0 40px #ff61ca, 0 0 50px #ff61ca, 0 0 60px #ff61ca, 0 0 70px #ff61ca, 0 0 90px #ff61ca;
+    }
+    to {
+      color: gray;
+      text-shadow: 0 0 20px #ff61ca, 0 0 30px #ff61ca, 0 0 40px #ff61ca, 0 0 50px #ff61ca, 0 0 60px #ff61ca, 0 0 70px #ff61ca, 0 0 80px #ff61ca, 0 1 90px #ff61ca;
+  }
+}
+.propose{
+    font-family: 'Dancing Script';
+    border: 1px solid  rgb(214, 3, 3);
+    padding: 1vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2vw 0 2vw 0;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(255, 164, 164),rgb(255, 255, 255));
+}
+.box{
+    width: 80%;
+    margin: 5% 0 0 10%;
+}
+.pro{
+    display: none;
+    margin-bottom: 5vw;
+} 
+.singleImg{
+    width: 30%;
+    margin-left: 35%;
+    border-radius: 2vw 0 2vw 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.thisText{
+    position: relative; 
+    /* margin-bottom: -20vw !important; */
+    text-align: center;
+    margin-bottom: 3vw;
+    font-family: 'Dancing script';
+    margin-top: 2vw;
+}
